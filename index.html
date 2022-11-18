@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="main-container">
+    <nav class="navbar-container">
+      <img src="/images/logo.svg" alt="logo">
+      <button class="btn-menu" type="button" onclick="mobileActive()">
+        <img src="/images/icon-menu.svg" alt="menu">
+      </button>
+      <div class="navbar-group-item" id="navbar-group">
+        <div class="menu-close">
+          <button class="btn-close" onclick="mobileActive()">
+            <img src="/images/icon-close-menu.svg" alt="close">
+          </button>
+        </div>
+        <ul class="navbar-menu">
+          <li class="nav-item" id="features">
+            <div class="head-item">
+              <p onclick="activeDrawer('features')">Features</p>
+              <img src="/images/icon-arrow-down.svg" alt="arrow">
+            </div>
+            <div class="nav-drawer">
+              <ul class="drawer-list">
+                <li class="drawer-item">
+                  <img src="/images/icon-todo.svg" alt="todo">
+                  <a href="#">Todo List</a>
+                </li>
+                <li class="drawer-item">
+                  <img src="/images/icon-calendar.svg" alt="todo">
+                  <a href="#">Calendar</a>
+                </li>
+                <li class="drawer-item">
+                  <img src="/images/icon-reminders.svg" alt="todo">
+                  <a href="#">Reminders</a>
+                </li>
+                <li class="drawer-item">
+                  <img src="/images/icon-planning.svg" alt="todo">
+                  <a href="#">Planning</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item" id="company">
+            <div class="head-item">
+              <p onclick="activeDrawer('company')">Company</p>
+              <img src="/images/icon-arrow-down.svg" alt="arrow">
+            </div>
+            <div class="nav-drawer" >
+              <ul class="drawer-list">
+                <li class="drawer-item">
+                  <a href="#">History</a>
+                </li>
+                <li class="drawer-item">
+                  <a href="#">Our Team</a>
+                </li>
+                <li class="drawer-item">
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">About</a>
+          </li>
+        </ul>
+        <div class="navbar-accout">
+          <a href="#" class="login-btn">Login</a>
+          <button type="button" class="reg-btn">Register</button>
+        </div>
+      </div>
+    </nav>
+    <div class="content-container">
+      <div class="text-content">
+        <div class="header-txt">
+          <h1>Make&nbsp;</h1>
+          <h1>remote work</h1>
+        </div>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+        </p>
+        <button class="more-btn" type="button">Learn more</button>
+        <div class="logo-client">
+          <img src="/images/client-databiz.svg" alt="databiz">
+          <img src="/images/client-audiophile.svg" alt="audiophile">
+          <img src="/images/client-meet.svg" alt="meet">
+          <img src="/images/client-maker.svg" alt="maker">
+        </div>
+      </div>
+      <div class="img-content">
+        <img class="img-hero-desktop" src="/images/image-hero-desktop.png" alt="hero-desktop">
+        <img class="img-hero-mobile" src="/images/image-hero-mobile.png" alt="hero-mobile">
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/boomtnt2843">Boom.Phattarapong</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
